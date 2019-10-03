@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29324.140
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SportsStore", "Fr_SportsStore\SportsStore.csproj", "{6839BDDB-CBA7-4F62-891B-FFDD49A6E9B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SportsStore", "SportsStore\SportsStore.csproj", "{6839BDDB-CBA7-4F62-891B-FFDD49A6E9B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsStore.Tests", "SportsStore.Tests\SportsStore.Tests.csproj", "{B85785A1-0EA0-4164-8B97-5E7A02FA091C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{6839BDDB-CBA7-4F62-891B-FFDD49A6E9B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6839BDDB-CBA7-4F62-891B-FFDD49A6E9B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6839BDDB-CBA7-4F62-891B-FFDD49A6E9B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B85785A1-0EA0-4164-8B97-5E7A02FA091C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B85785A1-0EA0-4164-8B97-5E7A02FA091C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B85785A1-0EA0-4164-8B97-5E7A02FA091C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B85785A1-0EA0-4164-8B97-5E7A02FA091C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
