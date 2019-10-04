@@ -20,7 +20,8 @@ namespace SportsStore
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>()
+                    webBuilder.UseWebRoot("wwwroot")
+                    .UseStartup<Startup>()
                     .UseDefaultServiceProvider(options => options.ValidateScopes = false);
                 });
     }
