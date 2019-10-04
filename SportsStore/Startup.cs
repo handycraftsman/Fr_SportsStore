@@ -25,8 +25,6 @@ namespace SportsStore
         {
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration["Data:SportsStoreProducts:ConnectionString"]));
             services.AddTransient<IProductRepository, EFProductRepository>();
-            //services.AddTransient<IProductRepository,FakeProductRepository>(); //Test data
-            services.AddMvc();
             services.AddMvc(option => option.EnableEndpointRouting = false);
         }
 
