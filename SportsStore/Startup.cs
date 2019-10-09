@@ -39,8 +39,19 @@ namespace SportsStore
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            app.UseDeveloperExceptionPage();
-            app.UseStatusCodePages();
+            //app.UseDeveloperExceptionPage();
+            //app.UseStatusCodePages();
+
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+                app.UseStatusCodePages();
+            }
+            else
+            {
+                app.UseExceptionHandler("/Error");
+            }
+
             app.UseStaticFiles();
             app.UseSession();
             app.UseAuthentication();
@@ -91,7 +102,9 @@ namespace SportsStore
                     routes.MapRoute(name: null, template: "{controller}/{action}/{id?}");
                 }
             );
-            SeedData.EnsurePopulated(app);
+            //Заполнить БД тестовыми данными.
+            //SeedData.EnsurePopulated(app);
+            //IdentitySeedData.EnsurePopulated(app);
         }
     }
 }
